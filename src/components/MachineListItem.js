@@ -6,10 +6,9 @@ class MachineListItem extends Component {
     const {machine} = this.props;
     return (
       <Well>
-        <h4>{machine.id}</h4>
+        <h4>{machine.machine_type}</h4>
         <ListGroup>
           <ListGroupItem>status: {machine.status}</ListGroupItem>
-          <ListGroupItem>machine_type: {machine.machine_type}</ListGroupItem>
           <ListGroupItem>longitude: {machine.longitude}</ListGroupItem>
           <ListGroupItem>latitude: {machine.latitude}</ListGroupItem>
           <ListGroupItem>last_maintenance: {machine.last_maintenance}</ListGroupItem>
